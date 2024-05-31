@@ -1,0 +1,264 @@
+.content_cart {
+    background-color: #f7f7f7;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.container_checkout {
+    margin: 40px 70px;
+}
+
+.form_login {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid #ccc;
+    
+}
+.form_login > div {
+    width: calc(100%/2);
+    margin: 10px 20px;
+}
+.form_user span{
+    display: block;
+}
+
+.span_login {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.span_info{
+    margin: 20px 0;
+}
+
+.btn-login input{
+    padding: 10px 20px;
+    margin-right: 12px;
+}
+.btn-login input:focus {
+    outline:none;
+}
+.btn-login button {
+    background-color: #3bb18f;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+}
+
+.form_code span{
+    display: block;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.btn-coupon input{
+    text-align: left;
+    padding: 10px 220px 10px 10px;
+    margin-right: 12px;
+}
+.btn-coupon input:focus {
+    outline: none;
+}
+.btn-coupon button{
+    background-color: #3bb18f;
+    color: white;
+    border: none;
+    padding: 12px 38px;
+}
+
+.form_info {
+    display: flex;
+    margin: 20px;
+    justify-content: space-between;
+}
+
+.form_info div {
+    width: calc(100%/2);
+}
+
+.row {
+    /* padding: 10px; */
+    /* margin: 10px; */
+    margin-top: 20px;
+    display: block
+}
+.row input {
+    padding: 10px 230px 10px 30px;
+    margin-bottom: 10px;
+}
+
+.row input:focus {
+    outline: none;
+}
+.message textarea {
+    display: block;
+    margin-top: 20px;
+    display: block;
+}
+
+.message textarea:focus {
+    outline: none;
+}
+
+#fullname {
+    display: flex;
+}
+
+#fullname input {
+    /* width: calc(100%/2); */
+    padding-right: 10px;
+    margin-right: 18px;
+}
+#state {
+    display: flex;
+}
+
+#state input {
+    margin-right: 18px;
+    padding-right: 10px;
+    
+}
+
+#btn_register {
+   display: inline;
+}
+
+.row input[type="checkbox"], .message input[type="checkbox"]{
+    display: none;
+}
+.row label, .message label {
+    display: block;
+    padding-left: 40px;
+    position: relative;
+}
+.row label::before, .message label::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: absolute;
+    top: -1px;
+    left: 1px;
+}
+
+.row input[type="checkbox"]:checked + label:after, .message input[type="checkbox"]:checked + label:after {
+    content: '';
+    display:block;
+    width: 10px;
+    height: 12px;
+    border-bottom: 3px solid #3bb18f;
+    border-right: 3px solid #3bb18f;
+    position: absolute;
+    top: -1px;
+    left: 5px;
+    transform: rotate(45deg);
+}
+.row input[type="checkbox"]:checked + label:before, .message input[type="checkbox"]:checked + label:before {
+    content: '';
+    border-color: #3bb18f;
+}
+
+.title_cart {
+    margin: 20px;
+}
+
+.details_total {
+    margin: 20px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    
+}
+.detail_total {
+    display: flex;
+    justify-content: space-between;
+}
+.info_total p {
+    margin: 20px 0;
+}
+.price_total p {
+    margin: 20px 0;
+}
+.detail_total .price_total {
+    text-align: right;
+  
+}
+
+.payment_method{
+    margin: 20px;
+    /* border: 1px solid #ccc; */
+}
+
+.payment_method > ul li{
+    padding: 15px;
+    border: 1px solid #ccc;
+}
+.payment_method ul li {
+    list-style-type: none;
+}
+.payment_method > ul li input[type="radio"]{
+    display: none;
+}
+
+.payment_method ul li label {
+    display: block;
+    position: relative;
+    padding-left: 20px;
+}
+.payment_method ul li label::before {
+    content: "";
+    display: block;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    position: absolute;
+    top: 3px;
+    left: 2px;
+}
+.payment_method ul li input[type="radio"]:checked + label::after {
+    content:"";
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: #3bb18f;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    left: 4px;
+    
+    
+}
+.payment_method ul li input[type="radio"]:checked + label::before{
+    content: '';
+    display: block;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    border: 1px solid #3bb18f;
+    opacity: 1;
+}
+
+
+.bank p {
+    margin: 10px;
+}
+
+.proceed_checkout {
+    margin: 20px;
+}
+
+.proceed_checkout button {
+    padding: 10px 20px;
+    background-color: #3bb18f;
+    color: white;
+    border:none;
+}
+
+footer {
+    border-top: 1px solid #ccc;
+}
+
+

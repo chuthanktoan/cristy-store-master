@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Your Cart</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/style.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/checkout.css'>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>   
+</head>
+<body>
+    <div class="loaded">
+        <div class="ring"></div>
+    </div>
+    <header>
+        <div class="container">
+            <div class="content_header">
+                <div class="title_header">
+                    <p>Free shipping on over $100</p>
+                </div>
+                <div class="info_header">
+                    <div class="language">
+                        <select name="language" id="">
+                            <option value="UK">ENG</option>
+                            <option value="US">USA</option>
+                            <option value="VN">VN</option>
+                        </select>
+                    </div>
+                    <div class="currency">
+                        <select name="currency" id="">
+                            <option value="USD">USD</option>
+                            <option value="EURO">EURO</option>
+                            <option value="VND">VND</option>
+                        </select>
+                    </div>
+                    <div class="account">
+                        <select name="account" id="">
+                            <option value="login">
+                                <a href="">Login</a>
+                            </option>
+                            <option value="register">
+                                <a href="">Register</a>
+                            </option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <div class="container">
+            <div class="wrap_menu">
+                <div class="menu">
+                    <div class="main_menu">
+                        <i class="fa-solid fa-bars"></i>
+                        <i class="fa-solid fa-x"></i>
+                        <div class="sub_menu hidden">
+                            <ul>
+                                <li>
+                                    <a href="./login.html">Login</a>
+                                </li>
+                                <li>
+                                    <a href="./register.html">Register</a>
+                                </li>
+                                <li>
+                                    <a href="./index.html">Home</a>
+                                </li>
+                                <li>
+                                    <a href="./cart.html">Cart</a>
+                                </li>
+                                <li>
+                                    <a href="./checkout.html">Checkout</a>
+                                </li>
+                                <li>
+                                    <a href="./product.html">Prouduct</a>
+                                </li>
+                            </ul>
+                        </div> 
+                </div>  
+                    
+                </div>
+                <a href="./index.html" class="logo">
+                    Cristy
+                </a>
+                <div class="cart_search">
+                    <div class="cart">
+                        <a href="./cart.html">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <div class="number">3</div>
+                        </a>
+                    </div>
+                    <div class="search">
+                        <input type="text">
+                        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <div class="content_cart">
+                <h1>Check Out</h1>
+                <p>You are here: Home > Check Out</p>
+            </div>
+            <div class="container_checkout">
+                <div class="form_login">
+                    <div class="form_user">
+                        <span class="span_login">Returning Customer <a href="./login.html">Click here to login</a></span>
+                        <span class="span_info">If you have shopped with us, before, please enter your details in the boxes below. If you are a new customer please proceed to the Billing & Shipping section.  </span>
+                        <div class="btn-login">
+                            <input type="text" placeholder="Username">
+                            <input type="password" placeholder="Password">
+                            <button type="button" id="btn-login">Login</button>
+                        </div>    
+                    </div>
+
+                    <div class="form_code">
+                        <span >Have a coupon <a href="">Clik here to login</a></span>
+                        <div class="btn-coupon">
+                            <input type="text" placeholder="Your coupon code">
+                            <button type="button" id="btn-coupon">Apply</button>
+                        </div>
+    
+                    </div>
+                    
+                </div>
+                
+                <div class="form_info">
+                    <div class="detail_account">
+                        <div class="title_billing">
+                            <span>Billing Address</span>
+                        </div>
+                        <div class="form_register">
+                            <form method="post" action="">
+                                <div class="row">
+                                    <input type="text" name="Bangladesh" placeholder="Bangladesh">
+                                </div>
+                                <div class="row" id="fullname">
+                                    <input type="text" name="firstname" placeholder="Firt name">
+                                    <input type="text" name="lastname" placeholder="Last name">
+                                </div>
+                                <div class="row">
+                                    <input type="text" name="company" placeholder="Company">
+                                </div>
+                                <div class="row">
+                                    <input type="text" name="addresss" placeholder="Address">
+                                </div>
+                                <div class="row">
+                                    <input type="text" name="city" placeholder="City/Town">
+                                </div>
+                                <div class="row" id="state">
+                                    <input type="text" name="State" placeholder="State/Country">
+                                    <input type="number" name="phone" placeholder="Phone">
+                                </div>
+                                <div class="row" id="btn_register">
+                                    <input type="checkbox" id="register" > 
+                                    <label for="register">Creat an account</label>
+                                </div>
+                            </form>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class="message">
+                        <input type="checkbox" id="ship">
+                        <label for="ship">Ship to a different address </label>
+                        <textarea name="" id="" style="width: 562px; height: 215px;"></textarea>
+                    </div>
+                </div>
+
+                <div class="cart_total">
+                    <div class="title_cart">
+                        Cart Totals
+                    </div>
+                    <div class="details_total">
+                        <div class="detail_total">
+                            <div class="info_total">
+                                <p>Subtotal</p>
+                                <p>Shipping and Handling</p>
+                                <p>Order Total</p>
+                            </div>
+                            <div class="price_total">
+                                <p>$400.00</p>
+                                <p>Free Shipping</p>
+                                <p>$116.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p style="text-align: right; margin: 20px; color: #3bb18f">Total: $532.00</p>
+
+                </div>
+                
+                <div class="payment_method">
+                    <ul>
+                        <li class="bank">
+                            <input type="radio" name="payment" value="1" id="bank">
+                            <label for="bank">Direct Bank Tranfer</label>
+                            <p></p>
+                        </li>
+                        <li class="cheque">
+                            <input type="radio" name="payment" value="2" id="cheque">
+                            <label for="cheque">Cheque Payment</label>
+                        </li>
+                        <li class="paypal">
+                            <input type="radio" name="payment" value="3" id="paypal">
+                            <label for="paypal">Paypal</label>   
+                        </li>
+                    </ul>
+                </div>
+                <div class="proceed_checkout">
+                    <button type="button">Proceed to Check Out</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="grid_footer">
+                <div class="company">
+                    <div>Company</div>
+                    <ul>
+                        <li>
+                            <a href="">About</a>
+                        </li>
+                        <li>
+                            <a href="">Our Shops</a>
+                        </li>
+                        <li>
+                            <a href="">News</a>
+                        </li>
+                        <li>
+                            <a href="">Delivery</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="help">
+                    <div>Help</div>
+                    <ul>
+                        <li>
+                            <a href="">Contact us</a>
+                        </li>
+                        <li>
+                            <a href="">FQA</a>
+                        </li>
+                        <li>
+                            <a href="">Help</a>
+                        </li>
+                        <li>
+                            <a href="">Terms</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="social">
+                    <div>Get Social</div>
+                    <ul>
+                        <li>
+                            <a href=""><i class="fa-brands fa-facebook-f"></i>
+                                <span>Facebook</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-brands fa-twitter"></i>
+                                <span>Twitter</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-brands fa-instagram"></i>
+                                <span>Instagram</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contact">
+                    <div>Contact</div>
+                    <p>7/4 Fire Briagde Road Khula 9100 Bangladesh</p>
+                    <p><span style="font-weight: bold;">Phone: </span> 123-456-789</p>
+                    <p><span style="font-weight: bold;">Email: </span>support@domain.com</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="scroll-top">
+        <a href="#top"><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
+    <script src="../js/code.jquery.com_jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        var bankElement = document.querySelector('.bank');
+        var pElement = document.querySelector('.bank p');
+        bankElement.onclick = function(e){
+            pElement.innerText = 'Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order wott b shipped until the funds have cleared in our account';
+        }
+        var inputs = document.querySelectorAll('input[type=radio]')
+        for( const input of inputs){
+            input.onchange = function(){
+                 pElement.innerText = "";
+        }}
+    </script>
+    <script src="../js/main.js"></script>
+</body>
+</html>

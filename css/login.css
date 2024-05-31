@@ -1,0 +1,139 @@
+
+form {
+    display: flex;
+    text-align: center;
+    border: 1px solid #ccc;
+    justify-content: center;
+    margin: 20px 170px;
+    border-radius: 10px;
+}
+
+.left {
+    width: 60%;
+}
+
+.left .title {
+    font-size: 25px;
+    color: #3bb18f;
+    margin: 0;
+    padding: 0;
+}
+
+.left a {
+    text-decoration: none;
+}
+.left .other_sign i {
+    margin: 10px;
+    padding:5px;
+    font-size: 16px;
+    color: black;
+    border: 1px solid #3bb18f;
+    border-radius: 5px;
+}
+
+.left .email {
+    text-align: left;
+    background-color: #ccc;
+    /* padding: 8px; */
+    margin: 25px 60px;
+    font-size: 20px;
+    border-radius: 5px;
+    display: flex;
+}
+.email input, .password input {
+    display: block;
+    width: 100%;
+    margin: 0 20px;
+    padding: 15px;
+    font-size: 16px;
+    padding-right: 30px;
+    background-color: #ccc;
+    border: none;
+}
+.email i:first-child{
+    padding: 15px 0px 15px 15px;
+}
+input:focus {
+    outline: none;
+}
+
+.forget {
+    margin: 20px 0;
+    font-weight: bold;
+}
+.left .password {
+    text-align: left;
+    background-color: #ccc;
+    /* padding: 18px; */
+    margin: 15px 60px;
+    font-size: 20px;
+    border-radius: 5px;
+    display: flex;
+    position: relative;
+}
+.password i:first-child{
+    padding: 15px 0px 15px 15px;
+}
+
+.left button {
+   
+    background-color: #3bb18f;
+    padding: 10px 30px;
+    border-radius: 4px;
+    color: white;
+    border: none;
+    margin: 20px 0;
+    text-transform: uppercase;
+}
+
+.right {
+    width: 40%;
+    background-color: #3bb18f;
+    padding: 100px 10px;
+    
+}
+
+.right h1 {
+    text-align: center;
+    color: white;
+    font-size: 27px;
+}
+
+.right span {
+    text-align: center;
+    color: white;
+}
+.right a {
+    text-decoration: none;
+    background-color: #3bb18f;
+    display: block;
+    width: 150px;
+    text-align: center;
+    color: white;
+    margin: 10px auto;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 1px solid white;
+    text-transform: uppercase;
+}
+
+footer {
+    border-top: 1px solid #ccc;
+}
+
+.left .password .eye {
+    position: absolute;
+    top: 17px;
+    left: 387px;
+
+}
+.hidden2 {
+    display: none;
+}
+
+.error {
+    display: block;
+    margin: 30px 68px;
+    text-align: left;
+    color: red;
+}
